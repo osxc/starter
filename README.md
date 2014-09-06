@@ -16,7 +16,7 @@ You can reach our (temporarily not updated and old) [website](http://osxc.github
 
 ## Get started
 
-> **Warning:**: All of this is subject to change, just be sure you're able to reach this page to see the latest instructions when it'll be updated. Don't worry though, we will not change brutally the structure of your current repo (not like we did with legacy).
+> **Warning:**: All of this is subject to change, just be sure you're able to reach this page to see the latest instructions when it'll be updated. Don't worry though, we will not change brutally the structure of your current repo (not like we did with legacy). All we are going to do is add a CLI tool.
 
 1. Be sure to have the XCode Command-Line tools installed: `xcode-select --install`
 2. [Fork this repo](https://github.com/osxc/starter/fork)
@@ -27,3 +27,7 @@ You can reach our (temporarily not updated and old) [website](http://osxc.github
 At the end, you'll only need to repeat step 5.
 
 Now you're ready to tweak the configuration we gave you. Have fun ! (You may want to read the [Ansible documentation](http://docs.ansible.com/index.html) in this case ...)
+
+## Learn More
+
+If you want to get more documentation or just want to see what osxc can do for you, here's a [repository list on ansible galaxy](https://galaxy.ansible.com/list#/users/6499) where you can find all the publicly available roles for osxc.
