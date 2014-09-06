@@ -1,0 +1,19 @@
+---
+# Here we describe every software we may want to install
+- hosts: all
+  roles:
+  - role: packages
+    brew_taps:
+    - caskroom/fonts
+    brew_packages:
+    - git
+    - zsh
+    - vim
+    - the_silver_searcher
+    - ctags
+    - reattach-to-user-namespace
+    - tmux
+    cask_packages:
+    - font-inconsolata-for-powerline
+    - iterm2
+    - macvim
