@@ -20,7 +20,7 @@ You can reach our (temporarily not updated and old) [website](http://osxc.github
 
 1. Be sure to have the XCode Command-Line tools installed: `xcode-select --install`
 2. [Fork this repo](https://github.com/osxc/starter/fork)
-3. Clone your forked repo anywhere you want on your machine: `git@github.com:<myname>/starter.git`; mv starter osxc; cd osxc`
+3. Clone your forked repo anywhere you want on your machine: `git clone git@github.com:<myname>/starter.git; mv starter osxc; cd osxc`
 4. Setup your system with `sudo easy_install pip; sudo pip install ansible`
 5. Start osxc with `ansible-galaxy install -r requirements.yml && ansible-playbook desktop.yml`
 
