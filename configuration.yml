@@ -2,10 +2,10 @@
 # Configure your freshly installed software
 - hosts: all
   roles:
-  - role: repository
+  - role: osxc.repository
     clone_url: https://github.com/robbyrussell/oh-my-zsh.git
     dest: /Users/{{ ansible_user_id }}/.oh-my-zsh
-  - role: repository
+  - role: osxc.repository
     clone_url: https://github.com/square/maximum-awesome.git
     dest: /Users/{{ ansible_user_id }}/.vim
     links:
@@ -15,7 +15,7 @@
       dest: /Users/{{ ansible_user_id }}/.vimrc.bundles
     - src: tmux.conf
       dest: /Users/{{ ansible_user_id }}/.tmux.conf
-  - role: repository
+  - role: osxc.repository
     clone_url: https://github.com/gmarik/vundle.git
     dest: /Users/{{ ansible_user_id }}/.vim/bundle/vundle
   post_tasks:
