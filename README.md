@@ -21,8 +21,8 @@ You can reach our (temporarily not updated and old) [website](http://osxc.github
 > **Additional Note:** If you're installing system-wide `sudo ansible-galaxy install -r requirements.yml` otherwise edit `ansible.cfg` and comment out `roles_path:./roles` to install the roles in your osxc.starter fork before running **Step 5**.
 
 1. Be sure to have the XCode Command-Line tools installed: `xcode-select --install`
-2. Manually install Ansible 1.8 with ``git clone https://github.com/ansible/ansible.git ~/src/github.com/ansible/ansible; cd ~/src/github.com/ansible/ansible; sudo make install``
-3. While that's happening [Fork this repo](https://github.com/osxc/starter/fork) and then clone your fork anywhere you want on your machine: `git clone git@github.com:<yourname>/starter.git; mv starter osxc; cd osxc`
+2. Manually install Ansible 1.8 with ``git clone https://github.com/ansible/ansible.git ~/src/github.com/ansible/ansible; cd ~/src/github.com/ansible/ansible; git submodule update --init --recursive; sudo make install``
+3. While that's happening [Fork this repo](https://github.com/osxc/starter/fork) and then clone your fork anywhere you want on your machine: `git clone https://github.com:<yourname>/starter.git osxc; cd osxc`
 4. Take a quick look at `configuration.yml` and `installation.yml` customizing to your liking.
 5. Start osxc with `ansible-galaxy install -r requirements.yml && ansible-playbook desktop.yml`
 
